@@ -18,7 +18,7 @@ else:
 # Parameters
 REGION = os.getenv('AWS_REGION')
 # Check valid languages here: https://docs.aws.amazon.com/comprehend/latest/dg/API_BatchDetectEntities.html#comprehend-BatchDetectEntities-request-LanguageCode
-LANGUAGE_CODE = os.getenv('LANGUAGE_CODE', default="en")
+LANGUAGE_CODE = os.getenv('LANGUAGE_CODE', default="ja")
 
 comprehend = boto3.client(service_name='comprehend', region_name=REGION)
 
